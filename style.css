@@ -34,7 +34,6 @@ a {
   display: flex;
 }
 
-/* 2. Шапка сайту: Flexbox у горизонтальному напрямку */
 .site-header {
   min-height: 82px;
   align-items: center;
@@ -104,7 +103,6 @@ a {
   transform: translateY(-2px);
 }
 
-/* 3. Головний блок (hero): два гнучкі елементи в ряд з різним співвідношенням */
 .hero {
   align-items: center;
   justify-content: space-between;
@@ -220,7 +218,6 @@ h1 span {
   transform: rotate(7deg);
 }
 
-/* 4. Картки напрямів: 4 в ряд на комп'ютері (від 1024 px) */
 .directions-section {
   padding: 76px 5% 88px;
   background: #ffffff;
@@ -322,7 +319,6 @@ h1 span {
   font-size: 1.1rem;
 }
 
-/* 5. Блок «Чому обирають Smart Space?»: три гнучкі колонки */
 .why-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -366,7 +362,6 @@ h1 span {
   color: #657087;
 }
 
-/* 6. Підвал сайту (footer) */
 .site-footer {
   align-items: center;
   justify-content: space-between;
@@ -411,10 +406,6 @@ h1 span {
   font-size: 0.9rem;
 }
 
-/* 7. Планшет (768–1023 px):
-      - Шапка і меню залишаються в один рядок
-      - Головний блок — вертикальне компонування
-      - Картки напрямів — 2 в ряд */
 @media (max-width: 1023px) {
   .site-header {
     gap: 14px;
@@ -457,11 +448,6 @@ h1 span {
   }
 }
 
-/* 8. Смартфон (до 767 px):
-      - Меню на телефоні — горизонтально в рядок
-      - Головний блок — вертикально (візуал зверху через order)
-      - Картки — 1 в ряд
-      - Кнопки — на всю ширину картки/екрана */
 @media (max-width: 767px) {
   .site-header {
     flex-direction: column;
@@ -535,7 +521,6 @@ h1 span {
   }
 }
 
-/* 9. Дуже вузькі екрани (проміжні значення) */
 @media (max-width: 380px) {
   h1 {
     font-size: 2rem;
@@ -560,5 +545,3 @@ h1 span {
   }
 }
 ```[cite: 1, 2, 4]
-
-Также проверь, чтобы файл на GitHub назывался именно `style.css` (без пробелов и скобок вроде `style (3).css`), чтобы он корректно подключался к `index.html`[cite: 1, 2, 4].
